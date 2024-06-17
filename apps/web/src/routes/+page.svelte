@@ -1,6 +1,9 @@
 <script lang="ts">
 	import { MyCounterButton } from '@repo/ui';
+	import { add } from '@repo/util';
 </script>
+
+{add(1)}
 
 <h1>Web</h1>
 <MyCounterButton />
