@@ -2,7 +2,7 @@
   "name": "@repo/util",
   "version": "0.0.1",
   "scripts": {
-    "dev": "vite dev",
+    "dev": "svelte-package -w",
     "build": "vite build && npm run package",
     "preview": "vite preview",
     "package": "svelte-kit sync && svelte-package && publint",
@@ -44,5 +44,8 @@
   },
   "svelte": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "fp-ts": "^2.16.6"
+  }
 }

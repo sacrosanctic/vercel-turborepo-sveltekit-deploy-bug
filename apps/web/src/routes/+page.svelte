@@ -1,11 +1,12 @@
 <script lang="ts">
 	import { MyCounterButton } from '@repo/ui';
-	import { add } from '@repo/util';
+	import { add, head } from '@repo/util';
 	import { times } from '@repo/util/multiply';
 </script>
 
 {add(1)}
 {times(1)}
+{JSON.stringify(head([1, 2, 3, 4]), null, 2)}
 
 <h1>Web</h1>
 <MyCounterButton />
